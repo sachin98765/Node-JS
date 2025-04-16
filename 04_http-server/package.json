@@ -1,16 +1,16 @@
 {
-  "name": "03_file-handling",
+  "name": "04_http-server",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "file-handling.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node file-handling.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "03_file-handling": "file:"
+    "04_http-server": "file:"
   }
 }

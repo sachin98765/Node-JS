@@ -1,13 +1,16 @@
 const fs = require('fs');
 
-/*------- Write File ---------*/
-/*
-//Sync....
-fs.writeFileSync('./test.txt','This is File  Handling in Node.js');
+const os= require('os');
+console.log(os.cpus().length)
 
-//Async...
-fs.writeFile('./test.txt','This is File  Handling in Node.js--- Async', (err) => {})
-*/
+/*------------------------------understand Event Loop and Threads in ARCHITECTURE------------------*/
+/*------- Write File ---------*/
+
+//Sync....
+// fs.writeFileSync('./test.txt','This is File  Handling in Node.js');
+
+// //Async...
+// fs.writeFile('./test.txt','This is File  Handling in Node.js--- Async', (err) => {})
 
 
 /*------- Access File ---------*/
@@ -15,7 +18,8 @@ fs.writeFile('./test.txt','This is File  Handling in Node.js--- Async', (err) =>
 // const result= fs.readFileSync('./contacts.txt', 'utf-8');
 // console.log(result);
 
-//Read File Async
+// console.log('1')
+// //Read File Async
 // fs.readFile("./contacts.txt", 'utf-8', (err, result) => {
 //     if(err){
 //         console.log("Err",err)
@@ -23,14 +27,17 @@ fs.writeFile('./test.txt','This is File  Handling in Node.js--- Async', (err) =>
 //         console.log(result)
 //     }
 // })
-
+// console.log(2)
 
 /*------------Append File---------*/
-fs.appendFileSync('./test.txt', `This is Append File Handling in Node.js\n`);
+// fs.appendFileSync('./test.txt', `This is Append File Handling in Node.js\n`);
 
-/*---copy file---*/
-fs.cpSync('./test.txt', './copy.txt')
+// /*---copy file---*/
+// fs.cpSync('./test.txt', './copy.txt')
 
 
-/*--- file Details---*/
-console.log(fs.statSync("./test.txt"))
+// /*--- file Details---*/
+// console.log(fs.statSync("./test.txt"))
+
+
+
