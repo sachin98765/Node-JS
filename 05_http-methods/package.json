@@ -1,5 +1,5 @@
 {
-  "name": "04_http-server",
+  "name": "05_http-methods",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -11,7 +11,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "04_http-server": "file:",
+    "05_http-methods": "file:",
+    "express": "^5.1.0",
     "url": "^0.11.4"
   }
 }
