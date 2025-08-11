@@ -7,10 +7,10 @@ console.log(os.cpus().length)
 /*------- Write File ---------*/
 
 //Sync....
-// fs.writeFileSync('./test.txt','This is File  Handling in Node.js');
+// fs.writeFileSync('./test.txt','This is File  Handling in Node.js...');
 
 // //Async...
-// fs.writeFile('./test.txt','This is File  Handling in Node.js--- Async', (err) => {})
+//  fs.writeFile('./test.txt','This is File  Handling in Node.js--- Async', (err) => {})
 
 
 /*------- Access File ---------*/
