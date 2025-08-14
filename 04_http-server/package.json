@@ -13,6 +13,5 @@
   "dependencies": {
     "04_http-server": "file:",
     "url": "^0.11.4"
-  },
-  "devDependencies": {}
+  }
 }
