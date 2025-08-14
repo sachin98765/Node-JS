@@ -15,7 +15,7 @@ const myServer = http.createServer((req, res)=> {
          case '/about':
             const username=myUrl.query.name;
             const roll=myUrl.query.roll;
-             res.end(`Hi, ${username},${roll}`);
+             res.end(`Hii, ${username},${roll}`);
          break;
 
          default: res.end("404 Not Found");
