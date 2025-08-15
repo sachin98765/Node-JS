@@ -4,19 +4,28 @@ const url=require("url");
 
 const myServer = http.createServer((req, res)=> {
    if(req.url === "/favicon.ico") return res.end();
-   const log=`${Date.now()}: ${req.url} New Req Received \n`;
+   const log=`${Date.now()}: ${req.method} ${req.url} New Req Received \n`;
    const myUrl= url.parse(req.url, true);
    console.log(myUrl);
    fs.appendFile("log.txt",log, (err, data)=>{
       switch(myUrl.pathname){
-         case '/': res.end("HomePage");
-         break;
+         case '/': 
+            if(req.method === "GET") res.end("HomePage");
+            break;
 
          case '/about':
             const username=myUrl.query.name;
             const roll=myUrl.query.roll;
              res.end(`Hii, ${username},${roll}`);
          break;
+
+         case '/signup':
+            if(req.method === "GET") res.end("This is a Signup Form Page");
+            else if(req.method === "POST") {
+               //DB Query
+               res.end("User Signed Up succesfully");
+            }
+            break;
 
          default: res.end("404 Not Found");
          break;
